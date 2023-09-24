@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pattern</title>
+  </head>
+  <body style="color: brown">
+    <script>
+      var i, j;
+      var k;
+      var n= parseInt(prompt("enter the no limit to print a pattern"));
+      document.write("TRIANGLE IS:");
+      document.write("<br>");
+      // 1st loop for printing all the rows
+      for (i = 1; i <= n; i++) {
+        //2nd rows for creating a space
+        for (j = 1; j <= 2*n - i; j++) {
+          document.write("  &nbsp   ");
+        }
+        //3rd loop for printing the stars
+        for (k = 1; k <= i; k++) {
+          document.write("* ");
+        }
+        document.write("<br>");
+      }
+      
+    </script>
+  </body>
+</html>
