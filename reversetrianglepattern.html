@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REVERSE TRIANGLE</title>
+  </head>
+  <body style="font-size: 20px; color: blue">
+    <h1>REVERSE PATTERN:</h1>
+    <script>
+      let i, j, k;
+      let n = parseInt(prompt("enter the limit u want to print"));
+      for (i = n; i >= 1; i--) {
+        for (j = n; j > i; j--) {
+          document.write(" &nbsp ");
+        }
+        for (k = 1; k <= 2 * i - 1; k++) {
+          document.write("*   ");
+        }
+        document.write("<br> ");
+      }
+    </script>
+  </body>
+</html>
